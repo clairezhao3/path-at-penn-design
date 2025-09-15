@@ -8,7 +8,7 @@ README.md # This file
 
 ### Instructions for Running Code:
 1. Download or clone this repository
-2. Open `index.html` in any modern web browser (Chrome, Firefox, Safari, Edge) 
+2. Open `index.html` in a web browser
 3. The interface will display
 
 #### Attributions
