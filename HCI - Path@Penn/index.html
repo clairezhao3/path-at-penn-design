@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Path@Penn — Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="app">
+    <!-- Phone frame -->
+    <div class="phone">
+      <!-- Status bar mock -->
+      <div class="status-bar">
+        <span>9:41</span>
+        <div class="status-icons">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Header -->
+      <header class="path-header">
+        <h1 class="brand">Path@Penn</h1>
+        <div class="header-actions">
+          <button class="settings-btn" aria-label="Settings">⚙️</button>
+        </div>
+      </header>
+
+      <!-- Search -->
+      <section class="search">
+        <label for="search-input" class="sr-only">Search courses</label>
+        <div class="search-bar">
+          <span class="search-icon">🔎</span>
+          <input id="search-input" type="text" placeholder="Search · Title · Instructor" />
+          <button class="chip">Filters</button>
+        </div>
+        <div class="helper">Results Found: 1</div>
+      </section>
+
+    <!-- Card -->
+    <article class="result-card">
+    <div class="card-code">FNCE 2170</div>
+    <div class="card-body">
+        <div class="card-title">Derivatives</div>
+        <div class="meta">
+        <span>Instructor: Cuoco</span>
+        <span>MW 12:00–1:00</span>
+        </div>
+    </div>
+    <div class="card-actions">
+        <button class="btn btn-primary">Add</button>
+        <button class="icon-btn">⋯</button>
+    </div>
+    </article>
+
+      <!-- Course list -->
+      <section class="list">
+        <div class="list-head">
+          <h2 class="schedule-title">Schedule</h2>
+          <button class="chip chip-ghost">Saved</button>
+        </div>
+
+        <!-- Card -->
+        <article class="card">
+          <div class="card-code">ASAM 1300</div>
+          <div class="card-body">
+            <div class="card-title">Asian American Film</div>
+            <div class="meta">
+              <span>Instructor: Buscher</span>
+              <span>MW 12:00–1:00</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-code">CIS 4000</div>
+          <div class="card-body">
+            <div class="card-title">Senior Design</div>
+            <div class="meta">
+              <span>Instructor: Loo</span>
+              <span>TR 9:00–10:30</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-code">CIS 4120</div>
+          <div class="card-body">
+            <div class="card-title">HCI</div>
+            <div class="meta">
+              <span>Instructor: Head</span>
+              <span>MW 1:45–3:15</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-code">FNCE 2070</div>
+          <div class="card-body">
+            <div class="card-title">Corporate Valuation</div>
+            <div class="meta">
+              <span>Instructor: Wessels</span>
+              <span>TR 2:00–3:30</span>
+            </div>
+          </div>
+        </article>
+
+      <!-- Drag/Drop Area -->
+        <article class="drag-drop-box">
+          <div class="drag-box">
+          Drag and drop here to add courses to schedule
+          </div>
+        </article>
+
+        
+        <h2 class="section-title">Calendar View</h2>
+        <!-- Week grid (static) -->
+         <section class="week-grid">
+        <div class="week-head">
+          <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
+        </div>
+        <div class="week-body">
+          <div class="slot"><div class="block block-a">CIS 4120<br/><small>10–11:30</small></div></div>
+          <div class="slot"></div>
+          <div class="slot"><div class="block block-b">ASAM 1300<br/><small>12–1</small></div></div>
+          <div class="slot"></div>
+          <div class="slot"><div class="block block-c">FNCE 2070<br/><small>2–3:30</small></div></div>
+        </div>
+      </section>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
